@@ -1,0 +1,69 @@
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style>
+		* {
+			box-sizing: border-box;
+			font-family: 'Press Start 2P', cursive;
+		}
+	</style>
+	<title>Fight Very Easy</title>
+</head>
+
+<body class="d-flex justify-content-center p-5 bg-image"
+	style="background-image: url('https://www.teahub.io/photos/full/162-1622506_8-bit-space-background.jpg');">
+	<!-- red constainer div -->
+	<div style="position: relative; display: inline-block">
+		<!-- simo constainer div -->
+		<div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+			<!-- player health -->
+			<div
+				style="position: relative;  height: 30px; width: 100%; display: flex; justify-content: flex-end; border: 2px solid white;">
+				<div style="height: 30px; width: 100%;">
+				</div>
+				<div id="playerHealth"
+					style="position: absolute; background:#16a34a; top: 0; right: 0; bottom: 0; width: 100%; "></div>
+			</div>
+			<!-- timer -->
+			<div id="timer"
+				style="height: 100px; width: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size:30; color: white">
+			</div>
+			<!-- enemy health -->
+			<div style="position: relative;  height: 30px; width: 100%; border: 2px solid white;">
+				<div style="height: 30px; "></div>
+				<div id="enemyHealth"
+					style="position: absolute; background:#16a34a; top: 0; right: 0; bottom: 0; left: 0; "></div>
+			</div>
+		</div>
+		<div id="displayText"
+			style="position: absolute; color: white;  justify-content: center; top: 250; right: 0; left: 0; bottom: 0; display: none; font-size:30">
+		</div>
+		<button id="restartBtn" style="position: absolute; color: white; display: none;  justify-content: center; top: 300; right: 0; left: 0; bottom: 0;  font-size:20; 
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			border: none;
+			cursor:pointer;
+			overflow: hidden;  ">
+		</button>
+		<!-- button player -->
+		<button type="button" id="attackBtn" class="btn translate-middle" style="position: absolute; color: white; width: 120px; height: 50px; background: black; opacity: 60%;
+		top: 500; right: 0; left: 900; bottom: 0;
+		">
+			Attack
+		</button>
+		<!-- charcter -->
+		<canvas></canvas>
+	</div>
+
+	<script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+		integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./js/classes.js"></script>
+	<script src="./js/utils.js"></script>
+	<script src="./index.js"></script>
+	<script src="./js/bot.js"></script>
+
+</body>
